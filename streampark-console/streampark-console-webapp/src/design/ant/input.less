@@ -1,0 +1,48 @@
+@import (reference) '../color.less';
+
+// input
+.ant-input {
+  &-number {
+    min-width: 110px;
+  }
+}
+
+.ant-input-affix-wrapper .ant-input-suffix {
+  right: 9px;
+}
+
+.ant-input-clear-icon {
+  margin-right: 5px;
+}
+
+.ant-input-affix-wrapper-textarea-with-clear-btn {
+  padding: 0 !important;
+
+  textarea.ant-input {
+    padding: 4px;
+  }
+}
+
+[data-theme="dark"] {
+
+  .ant-input-group.ant-input-group-compact>* {
+    border-right-color: transparent;
+  }
+
+  .ant-input-group-addon {
+    background-color: transparent !important;
+  }
+
+  .ant-picker-input>input[disabled],
+  .ant-input[disabled] {
+    color: #939393 !important;
+  }
+
+  .ant-picker-input>input:not(:focus) {
+    border-color: transparent !important;
+  }
+}
+
+.custom-input-group.ant-input-group-compact>*:not(:last-child) {
+  border-right-width: 0 !important;
+}

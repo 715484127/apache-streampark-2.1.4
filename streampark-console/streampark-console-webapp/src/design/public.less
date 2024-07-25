@@ -1,0 +1,63 @@
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-corner {
+  background: @component-background;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: fade(@border-color-split, 20%);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: @border-color-split;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:window-inactive {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken(@border-color-split, 10%);
+}
+
+// =================================
+// ==============nprogress==========
+// =================================
+#nprogress {
+  pointer-events: none;
+
+  .bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 2px;
+    background-color: @primary-color;
+    opacity: 0.75;
+  }
+}
+
+.extra .conf-switch {
+  color: darkgrey;
+  margin-left: 8px;
+}
